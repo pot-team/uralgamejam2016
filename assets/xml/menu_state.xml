@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <button center_x="true" x="0" y="200" name="start" use_def="text_button" group="top" label="Start">
+    <include id="_ui_globals"/>
+    <button center_x="true" x="0" y="240" name="start" use_def="text_button" label="Start">
         <param type="string" value="start"/>
     </button>
-    <button center_x="true" x="0" y="250" name="exit" use_def="text_button" group="top" label="Exit">
+    <!-- <button center_x="true" x="0" y="233" name="settings" use_def="text_button" label="Settings">
+        <param type="string" value="settings"/>
+    </button> -->
+    <button center_x="true" x="0" y="266" name="exit" use_def="text_button" label="Exit">
         <param type="string" value="exit"/>
     </button>
 </data>

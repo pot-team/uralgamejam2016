@@ -14,16 +14,17 @@
 	<!-- ____________________________ Window Settings ___________________________ -->
 
 	<!--These window settings apply to all targets-->
-	<window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" />
+	<!-- <window width="640" height="480" fps="60" background="#000000" hardware="true" vsync="true" /> -->
+	<window width="1280" height="720" fps="60" background="#000000" hardware="true" vsync="true" resizeable="false"/>
 
 	<!--HTML5-specific-->
-	<window if="html5" resizable="false" />
+	<!-- <window if="html5" resizable="false" fullscreen="true"/> -->
 
 	<!--Desktop-specific-->
-	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<!-- <window if="desktop" orientation="landscape" fullscreen="false" resizable="false" /> -->
 
 	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+	<!-- <window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" /> -->
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 

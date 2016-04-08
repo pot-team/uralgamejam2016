@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <definition id="text_button" width="64" height="24">
+        <graphic blank="true"/>
+        <text color="0xa0a0a0">
+            <color id="up" value="0xa0a0a0"/>
+            <color id="over" value="0xffaf00"/>
+            <color id="down" value="0xff7f00"/>
+        </text>
+    </definition>
+
+    <definition id="text" width="64" height="32">
+        <graphic blank="true"/>
+        <text color="0xa0a0a0">
+        </text>
+    </definition>
+</data>

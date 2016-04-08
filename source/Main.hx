@@ -30,7 +30,6 @@ class Main extends Sprite
 	public function new():Void
 	{
 		super();
-
 		if (stage != null)
 		{
 			init();
@@ -71,7 +70,7 @@ class Main extends Sprite
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 		}
-		loadConfig();
+		/*loadConfig();*/
 		setupGame();
 	}
 
