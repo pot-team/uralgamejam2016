@@ -34,11 +34,12 @@ class MenuState extends BaseState
         add(_btnPlay);
 /*
 		_btnSettings = new FlxButton(0, 0, 'Settings', clickSetting);
-        /*_btnSettings.screenCenter();*/
+        _btnSettings.screenCenter();
 		_btnSettings.x = (FlxG.width / 2) - (_btnSettings.width / 2);
 		_btnSettings.y = _btnPlay.y + difference_y;
 		difference_y += step_y;
-        add(_btnSettings);*/
+        add(_btnSettings);
+		*/
 
 		_btnExit = new FlxButton(0, 0, 'Exit', clickExit);
         /*_btnExit.screenCenter();*/
