@@ -3,12 +3,12 @@ package;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.util.FlxColor;
-import flixel.addons.ui.FlxUIState;
+/*import flixel.addons.ui.FlxUIState;*/
 import openfl.display.FPS;
 
 
 
-class BaseState extends FlxUIState
+class BaseState extends FlxState
 {
     private var fps:FPS;
 

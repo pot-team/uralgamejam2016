@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <include id="_ui_globals"/>
+    <definition id="grey" src="ui/dark_grey"/>
+    <!-- <chrome x="0" y="0" width="855" height="10" use_def="grey"/> -->
+    <chrome x="96" y="96" width="661" height="288" use_def="grey"/>
+
+    <button x="661" y="323" name="back" use_def="text_button" label="Back">
+        <param type="string" value="back"/>
+    </button>
+
+    <button x="587" y="323" name="save" use_def="text_button" label="Save">
+        <param type="string" value="save"/>
+    </button>
+
+
+
+    <text text="FullScreen" x="125" y="125" name="txtfullscreen" use_def="text">
+    </text>
+    <!-- <checkbox> -->
+
+    <!-- </checkbox> -->
+
+    <!-- <button center_x="true" x="0" y="233" name="settings" use_def="text_button" label="Settings">
+        <param type="string" value="settings"/>
+    </button>
+    <button center_x="true" x="0" y="266" name="exit" use_def="text_button" label="Exit">
+        <param type="string" value="exit"/> -->
+    <!-- </button> -->
+</data>
