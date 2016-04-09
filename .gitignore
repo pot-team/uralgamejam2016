@@ -1,2 +1,4 @@
 # Targets
-# export
+export
+assets/gfx
+assets/xml
