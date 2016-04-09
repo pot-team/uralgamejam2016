@@ -20,7 +20,7 @@ class Main extends Sprite
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
-	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+	var startFullscreen:Bool = true; // Whether to start the game in fullscreen on desktop targets
 
 	public static function main():Void
 	{
@@ -51,11 +51,11 @@ class Main extends Sprite
 			startFullscreen = _settings.data.startFullscreen;
 			/*trace( gameWidth, gameHeight, startFullscreen );*/
 			/*trace("data existed");*/
+			/*_settings.erase();*/
 		}
 		else
 		{
 			/*trace("data not existed");*/
-			/*_settings.erase();*/
 			_settings.data.gameWidth = gameWidth;
 			_settings.data.gameHeight = gameHeight;
 			_settings.data.startFullscreen = startFullscreen;
@@ -70,7 +70,7 @@ class Main extends Sprite
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 		}
-		/*loadConfig();*/
+		loadConfig();
 		setupGame();
 	}
 
