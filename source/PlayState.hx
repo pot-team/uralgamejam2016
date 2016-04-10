@@ -32,7 +32,7 @@ class PlayState extends BaseState
 
 	override public function create():Void
 	{
-		/*super.create();*/
+		super.create();
 		/*trace(stageHeight, stageWidth);*/
 
 

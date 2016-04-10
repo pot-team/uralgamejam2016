@@ -49,9 +49,9 @@ class MenuState extends BaseState
 	}*/
 	override public function destroy():Void
 	{
+		super.destroy();
         _btnPlay = FlxDestroyUtil.destroy(_btnPlay);
 		_btnExit = FlxDestroyUtil.destroy(_btnExit);
-		super.destroy();
 	}
 
 	override public function update(elapsed:Float):Void

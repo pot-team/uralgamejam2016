@@ -29,6 +29,7 @@
 	<!-- _____________________________ Path Settings ____________________________ -->
 
 	<set name="BUILD_DIR" value="export" />
+    <!-- <haxelib name="openfl-compatibility"></haxelib> -->
 	<classpath name="source" />
 	<assets path="assets" />
 

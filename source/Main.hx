@@ -8,6 +8,7 @@ import flash.Lib;
 import flixel.FlxGame;
 import flixel.math.FlxMath;
 import flixel.util.FlxSave;
+import openfl.display.FPS;
 import flixel.FlxState;
 
 class Main extends Sprite
@@ -88,6 +89,7 @@ class Main extends Sprite
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
 
+		addChild(new FPS(10, 10, 0xffffff));
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 	}
 }
