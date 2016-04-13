@@ -12,16 +12,16 @@ using flixel.util.FlxSpriteUtil;
 
 class MenuState extends BaseState
 {
-	private var _btnPlay:FlxButton;
-	private var _btnExit:FlxButton;
+	/*private var _btnPlay:FlxButton;*/
+	/*private var _btnExit:FlxButton;*/
 
 	override public function create():Void
 	{
 
-			/*_xml_id = "menu_state";*/
+		_xml_id = "menu_state";
 
 		super.create();
-		_btnPlay = new FlxButton(0, 0, 'Start', clickPlay);
+		/*_btnPlay = new FlxButton(0, 0, 'Start', clickPlay);
         _btnPlay.screenCenter();
 		_btnPlay.y = 240;
         add(_btnPlay);
@@ -29,9 +29,15 @@ class MenuState extends BaseState
 		_btnExit = new FlxButton(0, 0, 'Exit', clickExit);
         _btnExit.screenCenter();
 		_btnExit.y = _btnPlay.height + _btnPlay.y + 10;
-        add(_btnExit);
+        add(_btnExit);*/
 	}
-	/*public override function getEvent(name:String, sender:Dynamic, data:Dynamic, ?params:Array<Dynamic>):Void
+
+	public override function getRequest(name:String, target:Dynamic, data:Dynamic, ?params:Array<Dynamic>):Dynamic
+	{
+		return null;
+	}
+
+	public override function getEvent(name:String, sender:Dynamic, data:Dynamic, ?params:Array<Dynamic>):Void
 	{
 
 		switch (name)
@@ -46,19 +52,19 @@ class MenuState extends BaseState
 					}
 				}
 		}
-	}*/
+	}
 	override public function destroy():Void
 	{
 		super.destroy();
-        _btnPlay = FlxDestroyUtil.destroy(_btnPlay);
-		_btnExit = FlxDestroyUtil.destroy(_btnExit);
+		/*_btnExit = FlxDestroyUtil.destroy(_btnExit);
+		_btnPlay = FlxDestroyUtil.destroy(_btnPlay);*/
 	}
 
 	override public function update(elapsed:Float):Void
 	{
 		super.update(elapsed);
 	}
-
+	/*
 	private function clickPlay():Void
 	{
 		FlxG.switchState(new PlayState());
@@ -67,6 +73,6 @@ class MenuState extends BaseState
 	private function clickExit():Void
 	{
 		System.exit(0);
-	}
+	}*/
 
 }

@@ -22,6 +22,7 @@ import LevelData;
 class PlayState extends BaseState
 {
 	private var _player:Player;
+	private var _lamp:Lamp;
 	private var _level_base:FlxTilemap;
 	private var _level_walls:FlxTilemap;
 	private static var TILE_WIDTH:Int = 16;
@@ -42,6 +43,8 @@ class PlayState extends BaseState
 		add(_highlightBox);*/
 
 		setLevel();
+		_lamp = new Lamp(2, 23);
+		add(_lamp);
 		setPlayer();
 		setCamera();
 
@@ -62,8 +65,8 @@ class PlayState extends BaseState
 
 	function setLevel():Void
 	{
-		FlxG.camera.bgColor = 0xFF6DC2CA;
-		var _tileset_path0:String = "assets/images/tileset_grass_fall.png";
+		FlxG.camera.bgColor = 0xFF399199;
+		var _tileset_path0:String = "assets/images/tileset_asphalt_2.png";
 		var _tileset_path1:String = "assets/images/tileset_walls.png";
 		_curtain = new FlxSprite();
 		_curtain.makeGraphic(640, 480, 0x66000000);

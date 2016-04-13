@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <definition id="text_button" width="64" height="24">
-        <graphic blank="true"/>
-        <text color="0xa0a0a0">
-            <color id="up" value="0xa0a0a0"/>
-            <color id="over" value="0xffaf00"/>
-            <color id="down" value="0xff7f00"/>
+        <!-- <graphic blank="true"/> -->
+        <graphic name="up" image="ui/sprite_sheet_buttons_0_up"/>
+        <graphic name="over" image="ui/sprite_sheet_buttons_0_over"/>
+        <graphic name="down" image="ui/sprite_sheet_buttons_0_down"/>
+        <!-- <graphic name="up" image="ui/sprite_sheet_buttons_0" slice9="0,0,64,24"/> -->
+        <!-- <graphic name="over" image="ui/sprite_sheet_buttons_0" slice9="64,24,128,24"/> -->
+        <!-- <graphic name="down" image="ui/sprite_sheet_buttons_0" slice9="6,6,12,12"/> -->
+        <text color="0x525252">
+            <color id="up" value="0x525252"/>
+            <color id="over" value="0x515229"/>
+            <color id="down" value="0x575023"/>
         </text>
     </definition>
 
     <definition id="text" width="64" height="32">
         <graphic blank="true"/>
-        <text color="0xa0a0a0">
+        <text color="0x525252">
         </text>
     </definition>
 </data>

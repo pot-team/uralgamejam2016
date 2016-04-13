@@ -25,14 +25,18 @@ class Player extends FlxSprite
     */
     public function new(X:Float=0, Y:Float=0)
     {
-        super(X * 16, Y * 16 - 52);
+        /*super(X * 16, Y * 16 - 52);
 		loadGraphic("assets/images/sanji.png", true, 47, 52);
-		setSize(47, 47);
+		setSize(47, 52);*/
+        super(X * 16, Y * 16 - 48);
+		loadGraphic("assets/images/character_template_3.png", true, 32, 48);
+		setSize(32, 48);
 		/*offset.set(9, 8);*/
 
-		animation.add("idle", [0]);
-		animation.add("walk", [for (i in 0...8) i+3], 12);
-		/*animation.add("run" , [for (i in 0...8) i], 24);*/
+		animation.add("idle", [0, 1], 2);
+		/*animation.add("walk", [for (i in 0...8) i+3], 12);*/
+        animation.add("walk", [for (i in 0...4) i+2], 12);
+		animation.add("run" , [for (i in 0...6) i+7], 12);
         animation.add("jump", [1, 2], 3);
 		/*animation.add("skid", [14]);*/
 		/*animation.add("check", [9, 10, 11], 16, false);*/
@@ -86,7 +90,7 @@ class Player extends FlxSprite
 		else {
 			if (velocity.x == 0) animation.play("idle");
 			/*else if (velocity.x > 0 && acceleration.x < 0 || velocity.x < 0 && acceleration.x > 0) animation.play("skid");*/
-			/*else if (Math.abs(velocity.x) > _maxWalkSpeed) animation.play("run");*/
+			else if (Math.abs(velocity.x) > _maxWalkSpeed) animation.play("run");
 			else animation.play("walk");
 		}
 	}
