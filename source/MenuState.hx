@@ -8,6 +8,7 @@ import flixel.ui.FlxButton;
 import flash.system.System;
 import flixel.util.FlxDestroyUtil;
 using flixel.util.FlxSpriteUtil;
+import flixel.util.FlxTimer;
 
 
 class MenuState extends BaseState
@@ -21,6 +22,8 @@ class MenuState extends BaseState
 		_xml_id = "menu_state";
 
 		super.create();
+		FlxG.camera.bgColor = 0xFF000000;
+		FlxG.mouse.visible = true;
 		/*_btnPlay = new FlxButton(0, 0, 'Start', clickPlay);
         _btnPlay.screenCenter();
 		_btnPlay.y = 240;
